@@ -41,7 +41,7 @@ const ContactSection: React.FC = () => {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 my-10 gap-4">
       <div className="lg:mx-10">
-        <Card className="bg-dark p-5">
+        <Card className="bg-dark p-2 md:p-5">
           <CardHeader>
             <CardTitle>
               <h2 className="text-secondary">

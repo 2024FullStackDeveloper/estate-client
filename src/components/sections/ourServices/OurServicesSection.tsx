@@ -218,7 +218,7 @@ const OurServicesSection: React.FC = () => {
             >
               <div dir={dir} className="p-1">
                 <ServiceCard
-                  className="cursor-pointer"
+                  className="cursor-pointer overflow-hidden"
                   key={item.id}
                   headerProps={{
                     title: item.title,

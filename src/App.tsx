@@ -46,8 +46,7 @@ function App() {
               <SplashCursor/>
               <Header />
               <FixedSettingsBox className="mt-[10rem]" />
-              <main className="flex flex-col mt-20 px-[4rem]">
-  
+              <main className="flex flex-col mt-20 px-2  md:px-[4rem]">
                 <MainSection />
                 <Line />
                 <OurServicesSection />

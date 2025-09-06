@@ -34,10 +34,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           {items?.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col bg-card-box flex-2 rounded-md h-24 p-3"
+              className="flex flex-col bg-card-box flex-2 rounded-md h-24 p-2"
             >
               <p className="lg:text-2xl truncate">{item.up}</p>
-              <span className="lg:text-2xl font-bold truncate">{item.down}</span>
+              <span className="lg:text-2xl text-sm font-bold truncate">{item.down}</span>
             </div>
           ))}
           {(items && items?.length > 0) && <div className="bg-primary rounded-md expand transition-all flex-1 hidden">
