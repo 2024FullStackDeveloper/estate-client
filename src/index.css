@@ -1,0 +1,183 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+
+:root {
+  --radius: 0.65rem;
+  --background: oklch(96.416% 0.00011 271.152);
+  --foreground: oklch(21.342% 0.00002 271.152);
+  --card: oklch(1 0 0);
+  --nav: oklch(1 0 0);
+  --card-foreground: oklch(0.141 0.005 285.823);
+  --card-box: oklch(97.015% 0.00011 271.152);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.141 0.005 285.823);
+  --primary: oklch(87.589% 0.16455 152.942);
+  --primary-foreground: oklch(0.982 0.018 155.826);
+  --secondary: oklch(0.967 0.001 286.375);
+  --secondary-foreground: oklch(0.21 0.006 285.885);
+  --dark: oklch(0% 0 0);
+  --dark-foreground: oklch(100% 0.00011 271.152);
+  --muted: oklch(0.967 0.001 286.375);
+  --muted-foreground: oklch(0.552 0.016 285.938);
+  --accent: oklch(0.967 0.001 286.375);
+  --accent-foreground: oklch(0.21 0.006 285.885);
+  --destructive: oklch(21.342% 0.00002 271.152);
+  --destructive-foreground: oklch(96.416% 0.00011 271.152);
+  --icon: oklch(21.342% 0.00002 271.152);
+  --icon-hover: oklch(87.589% 0.16455 152.942);
+  --border: oklch(0.92 0.004 286.32);
+  --input: oklch(21.342% 0.00002 271.152);
+  --ring: oklch(0.723 0.219 149.579);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.141 0.005 285.823);
+  --sidebar-primary: oklch(0.723 0.219 149.579);
+  --sidebar-primary-foreground: oklch(0.982 0.018 155.826);
+  --sidebar-accent: oklch(0.967 0.001 286.375);
+  --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
+  --sidebar-border: oklch(0.92 0.004 286.32);
+  --sidebar-ring: oklch(0.723 0.219 149.579);
+}
+
+.dark {
+  --background: oklch(21.342% 0.00002 271.152);
+  --foreground: oklch(96.416% 0.00011 271.152);
+  --card: oklch(20.019% 0.00002 271.152);
+  --nav: oklch(0% 0 0);
+  --card-box: oklch(21.342% 0.00002 271.152);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.21 0.006 285.885);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(87.589% 0.16455 152.942);
+  --dark: oklch(100% 0.00011 271.152);
+  --dark-foreground: oklch(0% 0 0);
+  --primary-foreground: oklch(0.393 0.095 152.535);
+  --secondary: oklch(27.394% 0.00551 285.955);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.274 0.006 286.033);
+  --muted-foreground: oklch(0.705 0.015 286.067);
+  --accent: oklch(0.274 0.006 286.033);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(100% 0.00011 271.152);
+  --destructive-foreground: oklch(21.342% 0.00002 271.152);
+  --icon: oklch(87.589% 0.16455 152.942);
+  --icon-hover: oklch(21.342% 0.00002 271.152);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(96.416% 0.00011 271.152);
+  --ring: oklch(0.527 0.154 150.069);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.21 0.006 285.885);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.696 0.17 162.48);
+  --sidebar-primary-foreground: oklch(0.393 0.095 152.535);
+  --sidebar-accent: oklch(0.274 0.006 286.033);
+  --sidebar-accent-foreground: oklch(34.989% 0.13899 28.519);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.527 0.154 150.069);
+}
+
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-icon: var(--icon);
+  --color-icon-hover: var(--icon-hover);
+  --color-dark: var(--dark);
+  --color-dark-foreground: var(--dark-foreground);
+  --color-card-box: var(--card-box);
+  --color-nav: var(--nav);
+}
+
+
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+  .font-tajawal {
+    font-family: 'Tajawal', sans-serif;
+  }
+
+  .font-amiri {
+    font-family: 'Amiri', serif;
+  }
+}
+
+
+* {
+  @apply border-border outline-ring/50;
+  font-family: 'Tajawal', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-background text-foreground overflow-x-hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+h1 {
+  @apply font-bold xl:text-9xl lg:text-8xl md:text-7xl text-6xl;
+}
+
+h2 {
+  @apply font-bold xl:text-5xl lg:text-4xl md:text-3xl text-2xl;
+}
+
+h3 {
+  @apply font-bold xl:text-2xl lg:text-xl text-lg;
+}
+
+h4 {
+  @apply font-bold md:text-[16px] text-sm;
+}
+
+h5 {
+  @apply font-bold text-sm;
+}
+
+p {
+  @apply xl:text-lg md:text-[16px] text-sm leading-8;
+}

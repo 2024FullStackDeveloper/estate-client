@@ -1,0 +1,30 @@
+{
+    "app":{
+      "name":"عقاركو"
+    },
+    "menus":{
+        "home": "الرئيسية",
+        "about": "من نحن",
+        "services": "خدماتنا",
+        "contact": "اتصل بنا"
+    },
+    "titles":{
+      "intro":"نبذة عنا"
+    },
+    "buttons":{
+      "discover_more":"اكتشف المزيد",
+      "send":"ارسال"
+    },
+    "labels":{
+      "name":"الاسم",
+      "phone":"رقم الهاتف",
+      "email":"البريد الالكتروني",
+      "how_heard_about_us":"كيف سمعت عنا",
+      "message":"الرسالة"
+    },
+      "placeholders":{
+      "name":"اكتب اسمك هنا",
+      "how_heard_about_us":"اكتب كيف سمعت عنا",
+      "message":"اكتب رسالتك هنا"
+    }
+}
