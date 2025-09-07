@@ -24,7 +24,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 
   return (
     <Card {...props} className={cn("relative",props?.className)}>
-      <div className="bg-[url('images/building2.jpg')] bg-cover object-cover bg-center bg-fixed w-full h-full absolute z-0 opacity-10"/>
+      <div className="bg-cover object-cover bg-center bg-fixed w-full h-full absolute z-0 opacity-10" style={{backgroundImage:`url('images/building2.jpg')`}}/>
       <CardContent className="flex h-[250px] w-full aspect-square p-6 z-10">
         <div className="flex flex-col gap-2">
           <Title className="md:!text-xl text:lg" {...headerProps} />
