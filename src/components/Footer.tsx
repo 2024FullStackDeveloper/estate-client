@@ -30,7 +30,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">{t("app.name")}</h3>
             <div className="space-y-2">
               <p className="text-footer-muted text-sm leading-relaxed">
-                {isRTL ? "شركة تقدم خدمات عقارية" : "A company providing real estate services"}
+                {isRTL ? "شركة تقدم خدمات مقاولات" : "A company providing contracting services"}
               </p>
               <div className="space-y-1 text-sm text-footer-muted">
                 <p>{isRTL ? "المملكة العربية السعودية" : "The Kingdom of Saudi Arabia"}</p>
@@ -101,7 +101,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-sm text-footer-muted">
-            © {currentYear} {isRTL ? "جميع الحقوق محفوظة لدى شركة عقاركو" : "Aqarco company. All rights reserved."}
+            © {currentYear} {isRTL ? "جميع الحقوق محفوظة لدى شركة القمة" : "Al-Qimah company. All rights reserved."}
           </div>
           <div className="flex space-x-6">
             <a

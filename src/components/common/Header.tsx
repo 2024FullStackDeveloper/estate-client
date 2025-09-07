@@ -7,6 +7,7 @@ import { MenuIcon, X } from "lucide-react";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { Link } from "react-router";
 import AnimatedButton from "./AnimatedButton";
+import useScrollSmooth from "@/hooks/useScrollSmooth";
 
 const Header: React.FC = () => {
   const { t } = useLocalizer();
@@ -19,6 +20,7 @@ const Header: React.FC = () => {
     }
   }, [isMobile]);
 
+  const goTo = useScrollSmooth();
   return (
     <nav
       className={cn(
@@ -73,7 +75,7 @@ const Header: React.FC = () => {
                   <AnimatedButton
                   directArrowColor="text-black"
                     label={t("menus.contact")}
-                    onClick={() => {}}
+                    onClick={() => {goTo('contactUsSection')}}
                   />
                 </li>
               </ul>

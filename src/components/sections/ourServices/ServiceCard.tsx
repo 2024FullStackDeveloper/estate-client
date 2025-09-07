@@ -25,8 +25,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     <Card {...props}>
       <CardContent className="flex h-[250px] w-full aspect-square p-6 ">
         <div className="flex flex-col gap-2">
-          <Title {...headerProps} />
-           {content && <p className="line-clamp-2">{content}</p>}
+          <Title className="md:!text-xl text:lg" {...headerProps} />
+           {content && <p className="line-clamp-">{content}</p>}
         </div>
       </CardContent>
       <CardFooter>
@@ -37,7 +37,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
               className="flex flex-col bg-card-box flex-2 rounded-md h-24 p-2"
             >
               <p className="lg:text-2xl truncate">{item.up}</p>
-              <span className="lg:text-2xl text-sm font-bold truncate">{item.down}</span>
+              <span className="lg:text-lg text-sm font-bold truncate">{item.down}</span>
             </div>
           ))}
           {(items && items?.length > 0) && <div className="bg-primary rounded-md expand transition-all flex-1 hidden">

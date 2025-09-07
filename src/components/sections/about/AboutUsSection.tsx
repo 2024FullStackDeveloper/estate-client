@@ -20,43 +20,33 @@ const AboutUsSection: React.FC = () => {
         />
         <p className="lg:!text-xl">
           {
-            isRTL ? `        ببالغ السرور والسعادة، نرحب بكم في بوابتكم العقارية الأولى التي تفتح
-          لكم آفاقاً واسعةً من الفرص والإمكانيات في عالم الاستثمار والعقارات. إن
-          زيارتكم اليوم ليست مجرد تصفح عابر، بل هي بداية رحلة مثيرة نحو اكتشاف
-          عالم مليء بالخيارات الواعدة التي تلبي طموحاتكم وتتجاوز توقعاتكم. في
-          موقعنا، نؤمن بأن كل زائر يحمل حلمه الخاص، سواء كان البحث عن منزل
-          العائلة الأول، أو الاستثمار في عقار ذي عائد مجزٍ، أو حتى العثور على
-          تلك المساحة التجارية المثالية التي تمثل انطلاقة المشروع الناجح. لذلك،
-          حرصنا على تصميم منصة سهلة الاستخدام وغنية بالمحتوى الذي يضع بين أيديكم
-          أحدث العروض العقارية المتميزة في مختلف المناطق والمدن. نفخر بأننا لا
-          نقدم مجرد قوائم عقارية جافة، بل نقدم حلولاً متكاملة مصممة خصيصاً
-          لمساعدتكم في كل خطوة من رحلتكم العقارية. من خلال فريقنا من الخبراء
-          والمستشارين المتخصصين، نسعى جاهدين لتقديم الإرشاد والدعم الذي تحتاجونه
-          لاتخاذ القرارات المدروسة التي تناسب متطلباتكم وميزانياتكم. نحن هنا
-          لنجعل حلمكم العقاري حقيقة واقعة، ونعدكم بتجربة استثنائية تتميز
-          بالمصداقية والشفافية والاحترافية. تصفحوا موقعنا بحرية، واستفيدوا من
-          أدواتنا الذكية التي صممت لتسهيل عملية البحث والموازنة بين الخيارات
-          المتاحة. مرحباً بكم في عالم من الفرص غير المحدودة، حيث يبدأ كل حلم
-          عقاري برحلة ناجحة معنا. شكراً لثقتكم، ونتمنى لكم تجربة ممتعة ومفيدة في
-          موقعنا.` : `        With great pleasure and happiness, we welcome you to your first real estate portal, which opens up
-          a wide range of opportunities and possibilities in the world of investment and real estate. Your
-          visit today is not just a passing browse, but the beginning of an exciting journey towards discovering
-          a world full of promising options that meet your ambitions and exceed your expectations. At
-          our site, we believe that every visitor has their own dream, whether it is searching for their
-          first family home, investing in a property with a lucrative return, or even finding
-          that ideal commercial space that represents the launch of a successful project. Therefore,
-          we have designed an easy-to-use platform rich in content that puts the
-          latest premium real estate offers in various regions and cities at your fingertips. We pride ourselves on not
-          just providing dry real estate listings, but offering integrated solutions tailored
-          to assist you every step of your real estate journey. Through our team of experts
-and specialized consultants, we strive to provide the guidance and support you need
-to make informed decisions that suit your requirements and budgets. We are here
-          to make your real estate dream a reality, and we promise you an exceptional experience characterized
-          by credibility, transparency, and professionalism. Feel free to browse our website and take advantage of
-          our smart tools designed to facilitate the search process and help you weigh the available options
-          . Welcome to a world of unlimited opportunities, where every real estate dream
-          begins with a successful journey with us. Thank you for your trust, and we wish you an enjoyable and rewarding experience on
-          our website.`
+            isRTL ? `
+
+نحن في "شركة القمة" لسنا مجرد شركة مقاولات عادية، بل نحن بناة ثقة وشريك معتمد في تشييد مستقبل عمراني مزدهر. تأسست شركتنا على رؤية طموحة لرفع المعايير في صناعة البناء والتشييد، من خلال التزام راسخ بأسس الجودة المتقنة، والدقة في التنفيذ، والالتزام بالمواعيد النهائية.
+
+نتميز بفريق هندسي وإداري من ذوي الخبرة والكفاءة العالية، يمتلكون سنوات طويلة من الخبرة في إدارة وتنفيذ مجموعة واسعة من المشاريع، بدءًا من المشاريع السكنية والفيلات الفاخرة ووصولاً إلى المشاريع التجارية والمرافق العامة الكبرى.
+
+نعتمد في عملنا على أحدث التقنيات العالمية ومواد البناء عالية الجودة، لضمان متانة المنشآت وديمومتها، مع الالتزام الكامل بمعايير السلامة والأمان.
+
+ثقة عملائنا هي رأس مالنا الحقيقي، لذلك نحرص على بناء شراكات متينة قائمة على الشفافية المطلقة والاحترام المتبادل، حيث نستمع بعناية لاحتياجاتهم ونتعاون معهم لتحويل رؤيتهم إلى واقع ملموس يتجاوز التوقعات.
+
+نسخر طاقاتنا وإبداعنا لخدمة أهداف رؤية 2030 الطموحة من خلال المساهمة في تشييد البنية التحتية المتطورة والمجتمعات العمرانية المستدامة التي تلبي احتياجات الأجيال الحالية والقادمة.
+
+نفتخر بتسليم مئات المشاريع الناجحة التي أصبحت علامات بارزة في المشهد العمراني، وهو ما يعكس قدرتنا على تحمل المسؤولية والوفاء بأعلى معايير الجودة.
+
+في النهاية، فلسفتنا بسيطة: "التميز في كل لبنة نضعها، والثقة في كل وعد نقطعه". نحن هنا لبناء إرث من الإنجازات، وليس مجرد مباني.` : `At Al-Qimah, we are not just another construction company; we are builders of trust and a trusted partner in constructing a prosperous urban future. Our company was founded on an ambitious vision to raise standards in the construction industry through a firm commitment to quality, precision in execution, and adherence to deadlines.
+
+We are distinguished by our highly experienced and efficient engineering and administrative team, who have many years of experience in managing and executing a wide range of projects, from residential projects and luxury villas to commercial projects and major public facilities.
+
+We rely on the latest global technologies and high-quality building materials to ensure the durability and longevity of our structures, while fully complying with safety and security standards.
+
+Our clients' trust is our real capital, so we are keen to build strong partnerships based on absolute transparency and mutual respect, where we listen carefully to their needs and work with them to turn their vision into a tangible reality that exceeds expectations.
+
+We harness our energy and creativity to serve the ambitious goals of Vision 2030 by contributing to the construction of advanced infrastructure and sustainable urban communities that meet the needs of current and future generations.
+
+We are proud to have delivered hundreds of successful projects that have become landmarks in the urban landscape, reflecting our ability to take responsibility and meet the highest quality standards.
+
+Ultimately, our philosophy is simple: “Excellence in every brick we lay, trust in every promise we make.” We are here to build a legacy of achievements, not just buildings.`
           }
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 items-center">

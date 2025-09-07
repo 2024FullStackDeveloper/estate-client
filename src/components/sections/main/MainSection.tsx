@@ -13,7 +13,7 @@ const MainSection: React.FC = () => {
 
   return (
     <div className="relative w-full">
-      <FrameBox className="hidden lg:block" imageUrl="images/estate.png" />
+      <FrameBox className="hidden lg:block" imageUrl="images/building.jpg" />
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center justify-center my-10  z-10">
         <div className="col-span-2 flex flex-col gap-4 px-1 relative">
           <Ball className="animate-ping" />
@@ -27,7 +27,7 @@ const MainSection: React.FC = () => {
                   : "You are on the right track",
               },
               {
-                text: isRTL ? "شركة عقاركو" : "Aqarco Company",
+                text: isRTL ? "شركة القمة" : "Alkema Company",
                 className: "italic font-normal",
               },
               {
@@ -39,42 +39,25 @@ const MainSection: React.FC = () => {
           />
           <p className="text-justify">
             {isRTL
-              ? `ببالغ السرور والسعادة، نرحب بكم في بوابتكم العقارية الأولى التي تفتح لكم آفاقاً واسعةً من الفرص والإمكانيات في عالم الاستثمار والعقارات.
-            إن زيارتكم اليوم ليست مجرد تصفح عابر، بل هي بداية رحلة مثيرة نحو
-            اكتشاف عالم مليء بالخيارات الواعدة التي تلبي طموحاتكم وتتجاوز
-            توقعاتكم. في موقعنا، نؤمن بأن كل زائر يحمل حلمه الخاص، سواء كان
-            البحث عن منزل العائلة الأول، أو الاستثمار في عقار ذي عائد مجزٍ، أو
-            حتى العثور على تلك المساحة التجارية المثالية التي تمثل انطلاقة
-            المشروع الناجح. لذلك، حرصنا على تصميم منصة سهلة الاستخدام وغنية
-            بالمحتوى الذي يضع بين أيديكم أحدث العروض العقارية المتميزة في مختلف
-            المناطق والمدن. نفخر بأننا لا نقدم مجرد قوائم عقارية جافة، بل نقدم
-            حلولاً متكاملة مصممة خصيصاً لمساعدتكم في كل خطوة من رحلتكم العقارية.
-            من خلال فريقنا من الخبراء والمستشارين المتخصصين، نسعى جاهدين لتقديم
-            الإرشاد والدعم الذي تحتاجونه لاتخاذ القرارات المدروسة التي تناسب
-            متطلباتكم وميزانياتكم. نحن هنا لنجعل حلمكم العقاري حقيقة واقعة،
-            ونعدكم بتجربة استثنائية تتميز بالمصداقية والشفافية والاحترافية.
-            تصفحوا موقعنا بحرية، واستفيدوا من أدواتنا الذكية التي صممت لتسهيل
-            عملية البحث والموازنة بين الخيارات المتاحة. مرحباً بكم في عالم من
-            الفرص غير المحدودة، حيث يبدأ كل حلم عقاري برحلة ناجحة معنا. شكراً
-            لثقتكم، ونتمنى لكم تجربة ممتعة ومفيدة في موقعنا!`
-              : `It is with great pleasure and happiness that we welcome you to your first real estate portal, which opens up a wide range of opportunities and possibilities in the world of investment and real estate.
-Your visit today is not just a passing browse, but the beginning of an exciting journey towards
-discovering a world full of promising options that meet your ambitions and exceed
-            expectations. At our site, we believe that every visitor has their own dream, whether it is
-searching for their first family home, investing in a lucrative property, or
-even finding that perfect commercial space that represents the launch of a
-successful project. That's why we've designed an easy-to-use platform rich
-            in content that puts the latest premium real estate listings in various
-            regions and cities at your fingertips. We pride ourselves on offering more than just dry real estate listings; we provide
-            integrated solutions tailored to assist you every step of your real estate journey.
-            Through our team of experts and specialized consultants, we strive to provide
-            the guidance and support you need to make informed decisions that suit
-            your requirements and budgets. We are here to make your real estate dream a reality,
-            and we promise you an exceptional experience characterized by credibility, transparency, and professionalism.
-            Feel free to browse our website and take advantage of our smart tools designed to facilitate
-            the search process and help you weigh your options. Welcome to a world of
-            unlimited opportunities, where every real estate dream begins with a successful journey with us. Thank you
-for your trust, and we wish you an enjoyable and useful experience on our website!`}
+              ? `نحن شركة (القمة) للمقاولات، إحدى الركائز الأساسية في قطاع البناء والتطوير العمراني، حيث نمتلك خبرة واسعة في تنفيذ المشاريع بمختلف أحجامها وتعقيداتها. تأسست شركتنا على يد مجموعة من المهندسين والمتخصصين ذوي الخبرة الطويلة، الذين يجمعون بين المعرفة الأكاديمية العميقة والتطبيق العملي الميداني.
+
+نتميز بتقديم حلول متكاملة تشمل جميع مراحل المشروع، بدءًا من التخطيط والدراسات الأولية، مرورًا بالتصميم الهندسي الدقيق، ووصولاً إلى التنفيذ الميداني وتسليم المفتاح. نعتمد في عملنا على أحدث التقنيات العالمية ومواد البناء عالية الجودة، التي تضمن متانة المنشآت وديمومتها لسنوات طويلة.
+
+فريقنا الهندسي والإداري مدرب بأعلى المعايير، ويعمل بروح فريق واحدة لضمان الدقة في التنفيذ والالتزام بالجداول الزمنية والميزانيات المحددة. سلامة العاملين والمقاولين والمستخدمين النهائيين هي في صلب أولوياتنا، لذلك نلتزم بأعلى معايير الصحة والسلامة المهنية في جميع مواقعنا.
+
+ثقة عملائنا هي أغلى ما نملك، لذلك نحرص على بناء شراكات طويلة الأمد قائمة على الشفافية والنزاهة والاحترام المتبادل. مشاريعنا المتنوعة تشمل تشييد المجمعات السكنية، والفنادق، والمستشفيات، والمراكز التجارية، والبنية التحتية، مما يعكس مرونتنا وقدرتنا على التكيف مع متطلبات السوق.
+
+نساهم بدور فاعل في تحقيق رؤية 2030 من خلال المشاركة في المشاريع الوطنية الكبرى والتركيز على مفاهيم البناء المستدام والحلول الصديقة للبيئة. في النهاية، نحن لا نبيع خدمات بناء فحسب، بل نصنع ثقة وتبنى بها علاقات متينة، ونساهم في تشكيل معالم المستقبل.`
+              : `We are Al-Qimah Contracting Company, one of the cornerstones of the construction and urban development sector, with extensive experience in implementing projects of various sizes and complexities. Our company was founded by a group of engineers and specialists with long experience, combining deep academic knowledge with practical field application.
+
+We are distinguished by providing integrated solutions that cover all stages of the project, from planning and preliminary studies, through precise engineering design, to field implementation and turnkey delivery. In our work, we rely on the latest global technologies and high-quality building materials, which ensure the durability and longevity of our structures for many years to come.
+
+Our engineering and administrative team is trained to the highest standards and works as a single team to ensure precision in execution and adherence to specified schedules and budgets. The safety of workers, contractors, and end users is at the heart of our priorities, so we adhere to the highest standards of occupational health and safety at all our sites.
+
+Our clients' trust is our most valuable asset, so we strive to build long-term partnerships based on transparency, integrity, and mutual respect. Our diverse projects include the construction of residential complexes, hotels, hospitals, commercial centers, and infrastructure, reflecting our flexibility and ability to adapt to market requirements.
+
+We actively contribute to the realization of Vision 2030 by participating in major national projects and focusing on sustainable construction concepts and environmentally friendly solutions. Ultimately, we do not just sell construction services; we build trust and strong relationships, and contribute to shaping the future.
+`}
           </p>
           <TextDecorator
             className="lg:text-4xl text-2xl font-bold my-2"
