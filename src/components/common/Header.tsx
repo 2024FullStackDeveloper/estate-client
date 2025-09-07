@@ -86,8 +86,8 @@ const Header: React.FC = () => {
       {isMobile && (
         <div
           className={cn(
-            "flex mt-2 rounded-md absolute bg-nav w-full transition-all",
-            toggle ? "opacity-100" : "opacity-0"
+            "flex mt-2 rounded-md absolute bg-nav w-full transition-all ",
+            toggle ? "block" : "hidden"
           )}
         >
           <ul

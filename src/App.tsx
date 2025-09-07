@@ -13,7 +13,6 @@ import OurServicesSection from "./components/sections/ourServices/OurServicesSec
 import AboutUsSection from "./components/sections/about/AboutUsSection";
 import ContactSection from "./components/sections/contact/ContactSection";
 import Footer from "./components/Footer";
-import SplashCursor from "./components/animations/SplashCursor";
 
 function App() {
   const { dir, isRTL } = useLocalizer();
@@ -43,14 +42,17 @@ function App() {
             <Loader />
           ) : (
             <>
-              <SplashCursor/>
+              {/* <SplashCursor/> */}
               <Header />
               <FixedSettingsBox className="mt-[10rem]" />
               <main className="flex flex-col mt-20 px-2  md:px-[4rem]">
+
                 <MainSection />
                 <Line />
+
                 <OurServicesSection />
                 <Line />
+
                 <AboutUsSection />
                 <Line />
                 <ContactSection/>

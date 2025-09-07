@@ -17,9 +17,8 @@ const RateBox: React.FC<RateBoxProps> = ({
   const rate = Math.abs(rateValue);
 
   return (
-    <div className={cn("flex flex-col gap-2", className)}>
-      <h2>{rate.toString() + "+"}</h2>
-      <div className="h-3 rounded-full w-20 bg-primary" />
+    <div className={cn("flex flex-col gap-2 items-center", className)}>
+      <h2 className="text-primary">{rate.toString() + " + "}</h2>
       <p className={cn(" text-gray-500 !text-xl  md:!text-2xl", textClassName)}>
         {text}
       </p>
