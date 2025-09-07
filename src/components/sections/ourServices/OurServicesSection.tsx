@@ -1,14 +1,9 @@
 import React from "react";
 import Title from "../../common/Title";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  type CarouselApi,
-} from "../../ui/carousel";
+// import {
+//   type CarouselApi,
+// } from "../../ui/carousel";
 import useLocalizer from "@/hooks/useLocalizer";
-import { Button } from "../../ui/button";
-import { ArrowLeft, ArrowRight } from "lucide-react";
 import ServiceCard from "./ServiceCard";
 import { ScrollSection } from "@/components/common/ScrollSection";
 
@@ -197,30 +192,30 @@ const fakeEnOurServicesData = [
   },
 ];
 const OurServicesSection: React.FC = () => {
-  const { dir, isRTL } = useLocalizer();
-  const [api, setApi] = React.useState<CarouselApi>();
-  const [count, setCount] = React.useState<number>(0);
-  const [current, setCurrent] = React.useState<number>(0);
+  const { isRTL } = useLocalizer();
+  // const [api] = React.useState<CarouselApi>();
+  // const [count, setCount] = React.useState<number>(0);
+  // const [current, setCurrent] = React.useState<number>(0);
   const data = isRTL ? fakeArOurServicesData : fakeEnOurServicesData;
 
-  React.useEffect(() => {
-    if (!api) {
-      return;
-    }
-    setCount(api.scrollSnapList()?.length);
+  // React.useEffect(() => {
+  //   if (!api) {
+  //     return;
+  //   }
+  //   setCount(api.scrollSnapList()?.length);
 
-    api.on("select", () => {
-      setCurrent(api.selectedScrollSnap() + 1);
-    });
-  }, [api]);
+  //   api.on("select", () => {
+  //     setCurrent(api.selectedScrollSnap() + 1);
+  //   });
+  // }, [api]);
 
-  const canScrollNext = React.useMemo(() => {
-    return current != count;
-  }, [current, count]);
+  // const canScrollNext = React.useMemo(() => {
+  //   return current != count;
+  // }, [current, count]);
 
-  const canScrollPrev = React.useMemo(() => {
-    return current != 1;
-  }, [current]);
+  // const canScrollPrev = React.useMemo(() => {
+  //   return current != 1;
+  // }, [current]);
 
   return (
     <section

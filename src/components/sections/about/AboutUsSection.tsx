@@ -1,8 +1,6 @@
 import React from "react";
-import { Award, Quote } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { Award } from "lucide-react";
 import useLocalizer from "@/hooks/useLocalizer";
-import Intro from "./Intro";
 import RateBox from "./RateBox";
 import Title from "@/components/common/Title";
 import { ScrollSection } from "@/components/common/ScrollSection";

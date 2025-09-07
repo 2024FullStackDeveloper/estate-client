@@ -117,11 +117,11 @@ const ContactSection: React.FC = () => {
         <div className="bg-card flex flex-col p-4 rounded-sm w-full">
           <Title
             title={isRTL ? "معلومات التواصل بنا" : "Contact us information"}
-            subTitle={
+            subTitles={[
               isRTL
                 ? "نحنا متاحين على مدار 24 ساعة طلية الاسبوع عدا يوم الجمعة."
                 : "We are available 24 hours a day, seven days a week, except on Fridays."
-            }
+            ]}
             className="!text-3xl"
           />
 
