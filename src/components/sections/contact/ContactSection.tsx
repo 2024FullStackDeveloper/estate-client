@@ -1,6 +1,5 @@
 import AnimatedButton from "@/components/common/AnimatedButton";
-import Line from "@/components/common/Line";
-import TextDecorator from "@/components/common/TextDecorator";
+import { ScrollSection } from "@/components/common/ScrollSection";
 import Title from "@/components/common/Title";
 import {
   Card,
@@ -39,8 +38,23 @@ const ContactSection: React.FC = () => {
   ];
 
   return (
-    <section id="contactUsSection" className="grid grid-cols-1 lg:grid-cols-2 my-10 gap-4">
-      <div className="lg:mx-10">
+    <section id="contactUsSection"  className="my-10">
+            <ScrollSection animationType="scale">
+        <Title
+          prefix={false}
+          subTitles={[
+            isRTL
+              ? "تواصل معنا اليوم واحصل على استشارة مجانية لمشروعك. فريقنا من الخبراء جاهز لتحويل أفكارك إلى واقع ملموس"
+              : "Contact us today and get a free consultation for your project. Our team of experts is ready to turn your ideas into reality.",
+          ]}
+          subTitleClassName="text-center"
+          center
+          title={isRTL ? "تواصل بنا الان" : "Connect with us now"}
+        />
+      </ScrollSection>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 my-10 gap-4">
+              <div className="lg:mx-10">
         <Card className="bg-dark p-2 md:p-5">
           <CardHeader>
             <CardTitle>
@@ -90,12 +104,9 @@ const ContactSection: React.FC = () => {
         </Card>
       </div>
       <div className="flex flex-col gap-4">
-        <Title
-          title={isRTL ? "تواصل بنا الان" : "Connect with us now"}
-          className="underline"
-        />
-        <TextDecorator
-          className="lg:text-6xl text-4xl font-bold my-2"
+
+        {/* <TextDecorator
+          className="lg:text-4xl text-2xl font-bold my-2"
           values={[
             {
               text: isRTL
@@ -113,7 +124,7 @@ const ContactSection: React.FC = () => {
             },
           ]}
         />
-        <Line />
+        <Line /> */}
         <div className="bg-card flex flex-col p-4 rounded-sm w-full">
           <Title
             title={isRTL ? "معلومات التواصل بنا" : "Contact us information"}
@@ -145,6 +156,8 @@ const ContactSection: React.FC = () => {
           </ul>
         </div>
       </div>
+      </div>
+
     </section>
   );
 };

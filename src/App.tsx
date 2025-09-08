@@ -13,6 +13,7 @@ import OurServicesSection from "./components/sections/ourServices/OurServicesSec
 import AboutUsSection from "./components/sections/about/AboutUsSection";
 import ContactSection from "./components/sections/contact/ContactSection";
 import Footer from "./components/Footer";
+import OurProjectsSection from "./components/sections/ourProjects/OurProjectsSection";
 
 function App() {
   const { dir, isRTL } = useLocalizer();
@@ -49,12 +50,12 @@ function App() {
 
                 <MainSection />
                 <Line />
-
                 <OurServicesSection />
                 <Line />
-
                 <AboutUsSection />
                 <Line />
+                <OurProjectsSection/>
+                <Line/>
                 <ContactSection/>
               </main>
               <Footer/>

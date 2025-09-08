@@ -13,7 +13,7 @@ const Header: React.FC = () => {
   const { t } = useLocalizer();
   const { theme } = useTheme();
   const [toggle, setToggle] = useState(false);
-  const isMobile = useMediaQuery("(max-width:767px)");
+  const isMobile = useMediaQuery("(max-width:1065px)");
   React.useEffect(() => {
     if (isMobile) {
       setToggle(false);
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
             <div className="flex flex-row gap-4 items-center">
               <ul
                 className={cn(
-                  "flex flex-row gap-2 items-center  lg:[&>li]:text-2xl [&>li:not(:last-child)]:px-2 [&>li:not(:last-child)]:py-2  [&>li:not(:last-child)]:rounded-sm  [&>li]:font-bold [&>li:not(:last-child)]:hover:bg-gray-100",
+                  "flex flex-row gap-2 items-center  lg:[&>li]:text-lg [&>li:not(:last-child)]:px-2 [&>li:not(:last-child)]:py-2  [&>li:not(:last-child)]:rounded-sm  [&>li]:font-bold [&>li:not(:last-child)]:hover:bg-gray-100",
                   theme == "dark"
                     ? "[&>li:not(:last-child)]:hover:bg-[#191919]"
                     : "[&>li:not(:last-child)]:hover:bg-[#f1f1f1]"
@@ -70,6 +70,9 @@ const Header: React.FC = () => {
                 </li>
                 <li>
                   <Link to={"#"}>{t("menus.about")}</Link>
+                </li>
+                <li>
+                  <Link to={"#"}>{t("menus.projects")}</Link>
                 </li>
                 <li>
                   <AnimatedButton
@@ -111,6 +114,11 @@ const Header: React.FC = () => {
             <li>
               <Link className="w-full block" to={"#"}>
                 {t("menus.about")}
+              </Link>
+            </li>
+                        <li>
+              <Link className="w-full block" to={"#"}>
+                {t("menus.projects")}
               </Link>
             </li>
             <li>

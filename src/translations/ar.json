@@ -5,6 +5,7 @@
     "menus":{
         "home": "الرئيسية",
         "about": "من نحن",
+        "projects":"المشاريع",
         "services": "خدماتنا",
         "contact": "اتصل بنا"
     },

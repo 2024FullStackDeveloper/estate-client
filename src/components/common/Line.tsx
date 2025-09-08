@@ -19,7 +19,7 @@ const Line : React.FC<LineProps> = (
     horizontalMargin = 0
 }
 )=>{
-return <div style={{height:height,width:width + '%'}} className={cn("bg-gray-200",verticalMargin && `my-[${verticalMargin}px]`, horizontalMargin && `mx-[${horizontalMargin}px]`,className)}/>
+return <div style={{height:height,width:width + '%'}} className={cn("bg-dark/10",verticalMargin && `my-[${verticalMargin}px]`, horizontalMargin && `mx-[${horizontalMargin}px]`,className)}/>
 }
 
 export default Line;
