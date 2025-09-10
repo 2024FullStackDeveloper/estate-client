@@ -26,8 +26,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="bg-primary w-4 h-4 rounded-xs shadow" />
         <div className="h-[400px] w-[.1px] bg-dark/10" />
       </div>
-      <div className="flex flex-row gap-2 relative">
-        <div className="h-[350px] w-[350px] bg-card rounded-lg  -left-10 top-5 relative  hover:rotate-2   duration-75 transition-all -rotate-2 p-5 shadow-xl border border-dark/5">
+      <div className="flex flex-row gap-2">
+        <div className="h-[350px] w-[350px] bg-card rounded-lg rotate-2 p-5 shadow-xl border border-dark/5">
           <div className="flex flex-col h-full w-full gap-2 ">
             <img
               src={imageUrl}
@@ -36,14 +36,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             />
             <p className="truncate">{description}</p>
             {address && (
-              <div className="flex flex-row gap-2  justify-end">
+              <div className="flex flex-row gap-2 justify-end">
                 <MapPin size={20} />
                 <span>{address}</span>
               </div>
             )}
           </div>
         </div>
-        {content && <p className=" line-clamp-5 p-2 flex-1 invisible xl:visible">{content}</p>}
+        {content && <p className=" line-clamp-5 p-1 flex-1 invisible xl:visible">{content}</p>}
         {/* {subImages && subImages.length > 0 && (
           <div className="hidden lg:block mt-10">
           <div className="flex flex-col gap-2 justify-center relative ">
